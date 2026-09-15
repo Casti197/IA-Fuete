@@ -1,0 +1,10 @@
+{
+  "name": "El Fuete",
+  "description": "Asistente IA integral capaz de resolver cualquier problema, redactar borradores, organizar tareas de tu agenda, extraer ideas clave o asistirte con cualquier consulta estratégica.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>El Fuete</title>
+    <meta name="description" content="Asistente IA integral capaz de resolver cualquier problema, redactar borradores, organizar tareas de tu agenda, extraer ideas clave o asistirte con cualquier consulta estratégica." />
+    <meta property="og:title" content="El Fuete" />
+    <meta property="og:description" content="Asistente IA integral capaz de resolver cualquier problema, redactar borradores, organizar tareas de tu agenda, extraer ideas clave o asistirte con cualquier consulta estratégica." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <script>
+      // Suppress benign Vite dev websocket disconnect errors in sandboxed iframe
+      window.addEventListener('unhandledrejection', function(event) {
+        var reason = event.reason || '';
+        var msg = (typeof reason === 'string' ? reason : (reason.message || ''));
+        if (msg.indexOf('WebSocket') !== -1 || msg.indexOf('websocket') !== -1 || msg.indexOf('vite') !== -1) {
+          event.preventDefault();
+          event.stopImmediatePropagation();
+        }
+      });
+      window.addEventListener('error', function(event) {
+        var msg = event.message || '';
+        if (msg.indexOf('WebSocket') !== -1 || msg.indexOf('websocket') !== -1 || msg.indexOf('vite') !== -1) {
+          event.preventDefault();
+          event.stopImmediatePropagation();
+        }
+      });
+    </script>
+  </head>
+  <body class="bg-black text-white antialiased selection:bg-white selection:text-black">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
